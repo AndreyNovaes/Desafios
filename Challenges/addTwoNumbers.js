@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-expressions */
 const console = require('console');
 
+// refactoring
+
 const addTwoNumbers = (l1, l2) => {
   let greater;
   let minor;
@@ -20,6 +22,8 @@ const addTwoNumbers = (l1, l2) => {
   }
   return sum;
 };
+
+// refactoring
 
 const lista1 = [2, 4, 3];
 const lista2 = [5, 6, 4];
