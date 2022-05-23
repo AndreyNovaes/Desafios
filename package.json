@@ -4,7 +4,8 @@
   "description": "Repositório de exercícios com o objetivo de evoluir minha resolução de problemas",
   "main": "addTwoNumbers.js",
   "scripts": {
-    "test": "jest --coverage"
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "npm run eslint && jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/GTmudin/exercises#readme",
   "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.0"
   },
   "dependencies": {
