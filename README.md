@@ -1,2 +1,2 @@
-# exercises
-Repositório de exercícios com o objetivo de evoluir minha resolução de problemas
+# Desafios
+Repositório de Desafios técnicos com o objetivo de evoluir minha resolução de problemas
