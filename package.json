@@ -1,0 +1,27 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "Repositório de exercícios com o objetivo de evoluir minha resolução de problemas",
+  "main": "addTwoNumbers.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTmudin/exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTmudin/exercises/issues"
+  },
+  "homepage": "https://github.com/GTmudin/exercises#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "babel-jest": "^28.1.0",
+    "ts-jest": "^28.0.2"
+  }
+}

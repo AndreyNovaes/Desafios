@@ -1,4 +1,4 @@
-export default addTwoNumbers = (l1, l2) => {
+const addTwoNumbers = (l1, l2) => {
   const l1Int = arrayToInteger(l1);
   const l2Int = arrayToInteger(l2);
   const sum = Number(l1Int) + Number(l2Int);
@@ -20,6 +20,9 @@ const intToArray = (integer) => {
   const arrayOfIntegers = arrayOfStrings.map((string) => parseInt(string, 10));
   return arrayOfIntegers;
 };
+
+export default addTwoNumbers;
+
 
 // Add Two Numbers
 // Example 1:
