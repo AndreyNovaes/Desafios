@@ -1,36 +1,34 @@
-/* eslint-disable no-unused-expressions */
-const console = require('console');
-
-// refactoring
-
 const addTwoNumbers = (l1, l2) => {
-  let greater;
-  let minor;
-  l1.length > l2.length ? greater = l1 : greater = l2;
-  l1.length < l2.length ? minor = l1 : minor = l2;
-  const diff = greater.length - minor.length;
-  console.log(greater, minor, diff);
-  const sum = [];
-  for (let i = 0; i <= greater.length; i += 1) {
-    if (l1[i] && l2[i]) {
-      sum.push(l1[i] + l2[i]);
-    } else if (!l2[i] && l1[i]) {
-      sum.push[l1[i]];
-    } else if (!l1[i] && l2[i]) {
-      sum.push(l2[i]);
+  let vaiUm = 0;
+  const sumArr = [];
+  let sum;
+
+  for (let i = 0; i < l1.length || i < l2.length || vaiUm; i += 1) {
+    sum = (l1[i] || 0) + (l2[i] || 0);
+
+    sum += vaiUm;
+    vaiUm = 0;
+    if (sum >= 10) {
+      sum -= 10;
+      vaiUm = 1;
     }
+    sumArr.push(sum);
   }
-  return sum;
+  if (l1.length !== l2.length) {
+    return sumArr;
+  }
+  return sumArr.reverse();
 };
 
-// refactoring
-
-const lista1 = [2, 4, 3];
-const lista2 = [5, 6, 4];
+// const lista1 = [2, 4, 3];
+// const lista2 = [5, 6, 4];
 // Input: l1 = [2,4,3], l2 = [5,6,4]
 // Output: [7,0,8]
 // Explanation: 342 + 465 = 807.
 
-console.log(addTwoNumbers(lista1, lista2));
+// const l1Hard = [9, 9, 9, 9, 9, 9, 9];
+// const l2Hard = [9, 9, 9, 9];
+// hard Output: [8,9,9,9,0,0,0,1]
+// sum 10009998
 
 module.exports = addTwoNumbers;
