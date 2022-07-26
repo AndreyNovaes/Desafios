@@ -52,12 +52,4 @@ const romanToInt = (romanSymbol) => {
   return sum;
 };
 
-console.log(romanToInt('L'));
-romanToInt('IV');
-romanToInt('X');
-romanToInt('L');
-romanToInt('C');
-romanToInt('D');
-romanToInt('M');
-
 module.exports = romanToInt;

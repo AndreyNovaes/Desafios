@@ -16,6 +16,8 @@ const binarySearch = (nums, target) => {
   return -1; // se não encontrar o valor retorno -1
 };
 
+// É retornado o índice do valor procurado
+
 const searchWithIndexOf = (nums, target) => nums.indexOf(target);
 // código implementado e otimizado pelo proprio javascript
 
