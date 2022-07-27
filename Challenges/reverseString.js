@@ -4,22 +4,17 @@
 
 // Input: s = ["h","e","l","l","o"]
 // Output: ["o","l","l","e","h"]
+// Explanation: Reverse the order of characters in the array.
 
 // Input: s = ["H","a","n","n","a","h"]
 // Output: ["h","a","n","n","a","H"]
 
 const reverseString = (s) => {
   const inverseArr = [];
-  const lastIndex = s.length - 1;
-  for (let i = lastIndex; i >= 0; i -= 1) {
+  for (let i = s.length - 1; i >= 0; i -= 1) {
     inverseArr.push(s[i]);
   }
   return inverseArr;
 };
-
-// const input1 = ['h', 'e', 'l', 'l', 'o'];
-// const input2 = ['H', 'a', 'n', 'n', 'a', 'h'];
-// console.log(reverseString(input1));
-// console.log(reverseString(input2));
 
 module.exports = reverseString;

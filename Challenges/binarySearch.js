@@ -1,3 +1,11 @@
+// Input: nums = [-1,0,3,5,9,12], target = 9
+// Output: 4
+// Explanation: 9 exists in nums and its index is 4
+
+// Input: nums = [-1,0,3,5,9,12], target = 2
+// Output: -1
+// Explanation: 2 does not exist in nums so return -1
+
 const binarySearch = (nums, target) => {
   const numbersSorted = nums.sort((a, b) => a - b); // reorganizo o array em ordem crescente
   let minor = numbersSorted[0]; // capturo o menor valor do array
@@ -16,12 +24,6 @@ const binarySearch = (nums, target) => {
   return -1; // se não encontrar o valor retorno -1
 };
 
-// É retornado o índice do valor procurado
-
-const searchWithIndexOf = (nums, target) => nums.indexOf(target);
-// código implementado e otimizado pelo proprio javascript
-
 module.exports = {
   binarySearch,
-  searchWithIndexOf,
 };

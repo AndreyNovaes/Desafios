@@ -1,10 +1,28 @@
+// Input: l1 = [2,4,3], l2 = [5,6,4]
+// Output: [7,0,8]
+// Explanation: 342 + 465 = 807.
+
+// Input: l1 = [0], l2 = [0]
+// Output: [0]
+// Explanation: 0 + 0 = 0.
+
+// Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+// Output: [8,9,9,9,0,0,0,1]
+// Explanation: 9999999 + 9999 = 10009998.
+
 const addTwoNumbers = (l1, l2) => {
   let vaiUm = 0;
   const sumArr = [];
   let sum;
+  const l1LastIndex = l1.length - 1;
+  const l2LastIndex = l2.length - 1;
 
   for (let i = 0; i < l1.length || i < l2.length || vaiUm; i += 1) {
-    sum = (l1[i] || 0) + (l2[i] || 0);
+    if (l1.length !== l2.length) {
+      sum = (l1[l1LastIndex - i] || 0) + (l2[l2LastIndex - i] || 0);
+    } else {
+      sum = (l1[i] || 0) + (l2[i] || 0);
+    }
 
     sum += vaiUm;
     vaiUm = 0;
@@ -19,16 +37,5 @@ const addTwoNumbers = (l1, l2) => {
   }
   return sumArr.reverse();
 };
-
-// const lista1 = [2, 4, 3];
-// const lista2 = [5, 6, 4];
-// Input: l1 = [2,4,3], l2 = [5,6,4]
-// Output: [7,0,8]
-// Explanation: 342 + 465 = 807.
-
-// const l1Hard = [9, 9, 9, 9, 9, 9, 9];
-// const l2Hard = [9, 9, 9, 9];
-// hard Output: [8,9,9,9,0,0,0,1]
-// sum 10009998
 
 module.exports = addTwoNumbers;
