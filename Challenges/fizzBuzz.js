@@ -1,30 +1,29 @@
-// Input: n = 3
-// Output:["1","2","Fizz"]
+const arrOfTargets = [3, 5, 15, 45, 7, 81];
+const arrOfResponses = ['fizz', 'buzz', 'fizzbuzz', 'megafizzbuzz', 'solofizz', 'humblefizz'];
 
-// Input: n = 9
-// Output:["1","2","Fizz","4","Buzz","Fizz","7","8","FizzBuzz"]
+const KeyValueMapI = new Map();
+for (let i = 0; i < arrOfTargets.length; i += 1) {
+  KeyValueMapI.set(arrOfTargets[i], arrOfResponses[i]);
+}
 
-// Input: n = 15
-// Output:["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14", "FizzBuzz"]
+const zeroToAHundred = Array.from(Array(101).keys());
 
-// explanation: Fizz is divisible by 3 only
-// Buzz is divisible by 5 only
-// FizzBuzz is divisible by 3 and 5 at the same time
-
-const fizzBuzz = (n) => {
-  const arrFizzBuzz = [];
-  for (let i = n; i > 0; i -= 1) {
-    if (i % 15 === 0) {
-      arrFizzBuzz.push('FizzBuzz');
-    } else if (i % 5 === 0) {
-      arrFizzBuzz.push('Buzz');
-    } else if (i % 3 === 0) {
-      arrFizzBuzz.push('Fizz');
-    } else {
-      arrFizzBuzz.push(i.toString());
-    }
+class DinamicFizzBuzz {
+  constructor(KeyValueMap, iterableArray) {
+    this.KeyValueMap = KeyValueMap;
+    this.iterableArray = iterableArray;
   }
-  return arrFizzBuzz.reverse();
-};
 
-module.exports = fizzBuzz;
+  getFizzBuzz() {
+    const fizzBuzzArray = [];
+    for (let i = 0; i < this.iterableArray.length; i += 1) {
+      const currentValue = this.iterableArray[i];
+      const currentResponse = this.KeyValueMap.get(currentValue);
+      fizzBuzzArray.push(currentResponse || currentValue);
+    }
+    return fizzBuzzArray;
+  }
+}
+
+const fizzBuzz = new DinamicFizzBuzz(KeyValueMapI, zeroToAHundred);
+console.log(fizzBuzz.getFizzBuzz());
