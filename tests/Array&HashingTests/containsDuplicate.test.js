@@ -1,4 +1,4 @@
-const containsDuplicate = require('../../Neetcode/Array&Hashing/containsDuplicate');
+const containsDuplicate = require('../../Leetcode/Array&Hashing/containsDuplicate');
 
 test('containsDuplicate test', () => {
   const case1 = [1, 2, 3, 1]; // should return true

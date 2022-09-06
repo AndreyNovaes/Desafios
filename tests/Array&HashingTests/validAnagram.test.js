@@ -1,4 +1,4 @@
-const validAnagram = require('../../Neetcode/Array&Hashing/validAnagram');
+const validAnagram = require('../../Leetcode/Array&Hashing/validAnagram');
 
 test('validAnagram test', () => {
   const case1 = { s: 'anagram', t: 'nagaram' }; // should return true

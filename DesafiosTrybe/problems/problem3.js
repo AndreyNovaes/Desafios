@@ -6,8 +6,6 @@ function solve(year) {
   return `13.09.${year}`;
 }
 
-console.log(solve(2600));
-
 module.exports = {
   solve,
 };
