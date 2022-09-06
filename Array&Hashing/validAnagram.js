@@ -26,4 +26,11 @@ const validAnagram = (s, t) => {
   return isTrue;
 };
 
+// results for this validAnagram:
+// https://leetcode.com/submissions/detail/793000978/
+// advantages: good speed and great memory usage
+// disavantages: very bad readability
+// Runtime: 121 ms, faster than 56.20% of JavaScript online submissions for Valid Anagram.
+// Memory Usage: 42.9 MB, less than 86.49% of JavaScript online submissions for Valid Anagram.
+
 module.exports = validAnagram;

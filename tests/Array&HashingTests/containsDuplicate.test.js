@@ -1,4 +1,4 @@
-const containsDuplicate = require('./containsDuplicate');
+const containsDuplicate = require('../../Array&Hashing/containsDuplicate');
 
 test('containsDuplicate test', () => {
   const case1 = [1, 2, 3, 1]; // should return true

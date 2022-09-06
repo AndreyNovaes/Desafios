@@ -1,4 +1,4 @@
-const validAnagram = require('./validAnagram');
+const validAnagram = require('../../Array&Hashing/validAnagram');
 
 test('validAnagram test', () => {
   const case1 = { s: 'anagram', t: 'nagaram' }; // should return true

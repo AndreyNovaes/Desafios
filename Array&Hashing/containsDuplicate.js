@@ -21,4 +21,11 @@ const containsDuplicate = (nums) => {
   return true;
 };
 
+// results for this containsDuplicate:
+// https://leetcode.com/submissions/detail/792987946/
+// advantages: great speed, good memory usage, good readability
+// disavantages: could have a better readability
+// Runtime: 87 ms, faster than 95.50% of JavaScript online submissions for Contains Duplicate.
+// Memory Usage: 50.5 MB, less than 73.53% of JavaScript online submissions for Contains Duplicate.
+
 module.exports = containsDuplicate;
