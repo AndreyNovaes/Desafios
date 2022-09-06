@@ -1,4 +1,4 @@
-const twoSums = require('../../Array&Hashing/twoSums');
+const twoSums = require('../../Neetcode/Array&Hashing/twoSums');
 
 test('twoSums test', () => {
   expect(twoSums([2, 7, 11, 15], 9)).toEqual([0, 1]);

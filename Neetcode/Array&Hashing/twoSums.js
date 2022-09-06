@@ -21,7 +21,7 @@ const twoSums = (nums, target) => {
 
 // results for this twoSums:
 // https://leetcode.com/submissions/detail/792985349/
-// advantages: very legible and good memory usage
+// advantages: very legible and great memory usage
 // disavantages: very slow
 // Runtime: 384 ms, faster than 5.01% of JavaScript online submissions for Two Sum.
 // Memory Usage: 42.1 MB, less than 91.78% of JavaScript online submissions for Two Sum.
