@@ -22,7 +22,6 @@ test('twoSums II test', () => {
 
   for (let i = 0; i < cases.length; i += 1) {
     const { numbers, target, response } = cases[i];
-    console.log(numbers, target, response);
     expect(twoSum(numbers, target)).toEqual(response);
   }
 });
