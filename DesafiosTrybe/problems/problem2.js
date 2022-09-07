@@ -3,7 +3,10 @@
 // Exemplos de saídas:
 // 3
 // Explicação
-// É possível formar 3 pares distintos, dois pares de meias relacionadas à cor de número 10 e um par de meias relacionadas à cor de número 20. Todos os demais números do arrays não formam pares.
+// É possível formar 3 pares distintos, dois pares de meias 
+// relacionadas à cor de número 10 e um par de meias relacionadas 
+// à cor de número 20. Todos os demais números do arrays não formam 
+// pares.
 
 function solve(socks_array) {
   const map = new Map();
