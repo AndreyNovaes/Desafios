@@ -17,7 +17,7 @@ test('twoSums II test', () => {
     { numbers: [2, 3, 4], target: 6, response: [1, 3] },
     { numbers: [-1, 0], target: -1, response: [1, 2] },
     { numbers: [7, 23], target: 1, response: -1 },
-    { numbers: [1, 2, 3, 4, 5, 10, 24, 32, 45], target: 15, response: [5, 6]}
+    { numbers: [1, 2, 3, 4, 5, 10, 24, 32, 45], target: 15, response: [5, 6] },
   ];
 
   for (let i = 0; i < cases.length; i += 1) {
